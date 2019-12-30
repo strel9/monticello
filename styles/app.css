@@ -97,15 +97,13 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none; }
+  list-style: none;
+  font-size: 1.14em;
+  text-transform: uppercase;
+  text-decoration: none; }
   .ba-menu__item {
     display: flex;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.14em;
-    text-transform: uppercase;
-    text-decoration: none; }
+    align-items: center; }
     .ba-menu__item:before {
       content: "";
       width: 7px;
@@ -115,13 +113,13 @@ h2 {
       margin-right: 10px; }
     .ba-menu__item:hover::before {
       content: "";
-      width: 5px;
-      height: 5px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
       border: 1px solid #ffff;
       background-color: #ffff; }
     .ba-menu__item:not(:first-child) {
-      padding-left: 5.625em; }
+      padding-left: 10px; }
   .ba-menu__link {
     display: flex;
     align-items: center;

@@ -9,7 +9,7 @@ $('.ba-slider1').slick(
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 2000,
-        autoplay: true
+        autoplay: false
     }
 );
 $('.ba-slider2').slick({
