@@ -301,7 +301,8 @@ h2 {
 .ba-footer {
   color: #ffff;
   height: 522px;
-  background: linear-gradient(to right, #55b7ff, #7e5aff); }
+  background: linear-gradient(to right, #55b7ff, #7e5aff);
+  position: relative; }
   .ba-footer-wrapper {
     background-image: url(../img/footer-bg.png);
     background-position: center;
@@ -315,6 +316,27 @@ h2 {
   .ba-footer-wr {
     display: flex;
     justify-content: space-between; }
+
+.contact {
+  position: absolute;
+  color: black;
+  background-color: #ffffff;
+  opacity: 0.98;
+  top: -200px;
+  background-image: url(../img/frame-city-bg.png);
+  background-position: center;
+  background-size: cover; }
+  .contact-title {
+    position: relative; }
+    .contact-title::before {
+      content: '';
+      background-color: black;
+      top: 4%;
+      left: 46%;
+      right: 46%;
+      width: auto;
+      height: 1px;
+      position: absolute; }
 
 .slick-dots {
   -webkit-transform: translate(-50%, 0) rotate(90deg);

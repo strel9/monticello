@@ -400,20 +400,21 @@ h2 {
 	color: #ffff;
 	height: 522px;
 	background: linear-gradient(to right, #55b7ff, #7e5aff);
+	position: relative;
 
 	&-wrapper {
 		background-image: url(../img/footer-bg.png);
 		background-position: center;
 		background-size: cover;
 		height: 100%;
+
 	}
 
 	& .container2 {
 		max-width: 770px;
 		width: 100%;
 		margin: 0 auto;
-		padding: 0 $gap;
-
+		padding: 0 15px;
 	}
 
 
@@ -422,6 +423,36 @@ h2 {
 		display: flex;
 		justify-content: space-between;
 
+	}
+}
+
+.contact {
+	// display: flex;
+	// justify-content: center;
+	position: absolute;
+	color: black;
+	background-color: #ffffff;
+	opacity: 0.98;
+	top: -200px;
+	background-image: url(../img/frame-city-bg.png);
+	background-position: center;
+	background-size: cover;
+	// height: 100%;
+
+
+	&-title {
+		position: relative;
+
+		&::before {
+			content: '';
+			background-color: black;
+			top: 4%;
+			left: 46%;
+			right: 46%;
+			width: auto;
+			height: 1px;
+			position: absolute;
+		}
 	}
 }
 
