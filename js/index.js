@@ -2,7 +2,7 @@
 
 $('.ba-slider1').slick(
     {
-        vertical: true,
+        // vertical: true,
         infinite: true,
         dots: true,
         // arrows: true,
