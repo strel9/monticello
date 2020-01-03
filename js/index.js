@@ -2,10 +2,10 @@
 
 $('.ba-slider1').slick(
     {
-        // vertical: true,
+        vertical: false,
         infinite: true,
         dots: true,
-        // arrows: true,
+        arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 2000,
@@ -20,7 +20,7 @@ $('.ba-slider2').slick(
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplaySpeed: 4000,
-        autoplay: true
+        autoplay: false
     }
 );
 
@@ -30,6 +30,7 @@ function initMap() {
     let nolan = { lat: 40.6863028, lng: -73.9072198 };
     map = new google.maps.Map(document.getElementById('map'), {
         center: nolan,
+        // height: 700,
         // icon: './img/pin.png',
         // icon: './img/cupcake.svg',
         zoom: 14,
@@ -198,7 +199,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: nolan,
         map: map,
-        title: '123',
+        // title: '123',
 
         icon: {
             url: './img/pin.png',
@@ -212,15 +213,51 @@ function initMap() {
 // gmap json
 
 
+// скролл плавный настроить
+// $(document).ready(function () {
+//     $("#menu").on("click", "a", function (event) {
+//         event.preventDefault();
+//         var id = $(this).attr('href'),
+//             top = $(id).offset().top;
+//         $('body,html').animate({ scrollTop: top }, 1500);
+//     });
+// });
 // 
-
-
+// $(document).ready(function() {
+//     $('a[href^="#"]').click(function () { 
+//       elementClick = $(this).attr("href");
+//       destination = $(elementClick).offset().top;
+//       if($.browser.safari){
+//         $('body').animate( { scrollTop: destination }, 1100 );
+//       }else{
+//         $('html').animate( { scrollTop: destination }, 1100 );
+//       }
+//       return false;
+//     });
+//   });
 
 // скролл плавный настроить
-var $page = $('html, body');
-$('a[href*="#contact"]').click(function () {
-    $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 400);
-    return false;
-});
+// var $page = $('html, body');
+// $('a[href*="#contact"]').click(function () {
+//     $page.animate({
+//         scrollTop: $($.attr(this, 'href')).offset().top
+//     }, 400);
+//     return false;
+// });
+
+// 
+// $(document).ready(function () {
+//     $('a[href^="#"]').bind('click.smoothscroll', function (e) {
+//         e.preventDefault();
+
+//         var target = this.hash,
+//             $target = $(target);
+
+//         $('html, body').stop().animate({
+//             'scrollTop': $target.offset().top
+//         }, 600, 'swing', function () {
+//             window.location.hash = target;
+//         });
+//     });
+
+// });

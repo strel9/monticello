@@ -15,7 +15,7 @@
   margin-right: -15px; }
 
 .ba-row + .ba-row {
-  margin-top: 1rem; }
+  margin-top: 0.625rem; }
 
 [class^='ba-col'] {
   padding-left: 15px;

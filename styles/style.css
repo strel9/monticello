@@ -1,4 +1,15 @@
+@font-face {
+  font-family: 'gothambold1';
+  src: url("../fonts/GothamBold/gothambold1.eot");
+  src: local("gothambold1"), url("../fonts/GothamBold/gothambold1.woff") format("woff"), url("../fonts/GothamBold/gothambold1.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url("../fonts/GothamBook/GothamBook.eot");
+  src: local("GothamBook"), url("../fonts/GothamBook/GothamBook.woff") format("woff"), url("../fonts/GothamBook/GothamBook.ttf") format("truetype"); }
+
 h2 {
+  font-family: 'gothambold1';
   font-size: 2.75em;
   text-transform: uppercase; }
 
@@ -9,16 +20,14 @@ h2 {
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
-  width: 200px;
-  height: 41px;
-  border: 1px solid #000; }
+  width: 190px;
+  height: 48px;
+  border: 1px solid #000;
+  margin-top: 37px; }
   .btn:hover {
     background-color: #7e5aff;
     color: #ffff;
     border: 1px solid #ffff; }
-
-.ba-map {
-  min-height: 400px; }
 
 .ba-logo:hover {
   transform: scale(1.1); }
@@ -52,6 +61,7 @@ h2 {
     .ba-menu__item:not(:first-child) {
       padding-left: 4.125em; }
   .ba-menu__link {
+    font-family: 'GothamBook';
     display: flex;
     align-items: center;
     color: #ffff;
@@ -68,8 +78,8 @@ h2 {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    width: 41px;
-    height: 41px;
+    width: 2.56em;
+    height: 2.56em;
     border-radius: 50%;
     border: 1px solid #ffff; }
     .ba-social__items:not(:first-child) {
@@ -82,7 +92,6 @@ h2 {
   color: #ffff;
   background: linear-gradient(to right, #55b7ff, #7e5aff); }
   .ba-header-wrapper {
-    background-image: url(../img/header-bg.png);
     background-position: center;
     background-size: cover;
     height: 100vh; }
@@ -94,9 +103,10 @@ h2 {
   .ba-header-top {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 5%; }
   .ba-header-title {
+    font-family: 'gothambold1';
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,9 +115,11 @@ h2 {
       font-size: 5em;
       font-weight: bold;
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      letter-spacing: 5px; }
     .ba-header-title p {
-      font-size: 1.125em; }
+      font-size: 1.125em;
+      letter-spacing: 6px; }
   .ba-header-scroll {
     display: flex;
     justify-content: center;
@@ -127,11 +139,13 @@ h2 {
         background-color: #ffff; }
 
 .ba-section2 {
-  margin-bottom: 200px; }
+  margin-bottom: 10%; }
   .ba-section2-title {
     display: flex;
     justify-content: center;
-    position: relative; }
+    position: relative;
+    margin-top: 4%;
+    margin-bottom: 4%; }
     .ba-section2-title ::before {
       content: '';
       background-color: black;
@@ -144,29 +158,66 @@ h2 {
   .ba-section2-block {
     position: relative; }
     .ba-section2-block .container {
-      display: flex; }
+      display: flex;
+      margin-top: 112px; }
   .ba-section2-left__svg {
-    width: 100%;
+    width: 30%;
     height: 100%;
     position: absolute;
     z-index: -1;
     left: 0;
-    top: -80px; }
+    right: 0;
+    top: 0; }
   .ba-section2-left__img {
-    width: 100%; }
+    width: 108%; }
+  .ba-section2-right {
+    padding-left: 7.19em; }
+    .ba-section2-right__name {
+      margin: 0;
+      font-size: 1.375em;
+      text-transform: uppercase; }
+    .ba-section2-right__descr {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.125em;
+      max-width: 470px; }
+    .ba-section2-right__city {
+      font-style: italic;
+      padding-top: 45px; }
+      .ba-section2-right__city i {
+        padding-right: 10px; }
 
 .ba-section3-block {
+  margin-bottom: 130px;
   position: relative; }
   .ba-section3-block .container {
     display: flex; }
+
+.ba-section3-left__name {
+  margin: 0;
+  font-size: 1.375em;
+  text-transform: uppercase; }
+
+.ba-section3-left__descr {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125em;
+  max-width: 470px; }
+
+.ba-section3-left__city {
+  font-style: italic;
+  padding-top: 45px; }
+  .ba-section3-left__city i {
+    padding-right: 10px; }
 
 .ba-section3-right__svg {
   position: absolute;
   z-index: -1;
   right: 0;
-  top: -100px;
+  top: -20%;
   height: 100%;
   width: 30%; }
+
+.ba-section3-right__img {
+  width: 100%; }
 
 .ba-section4 {
   color: #ffff;
@@ -177,6 +228,8 @@ h2 {
     background-size: cover;
     height: 100%; }
   .ba-section4-title {
+    margin-top: 140px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -191,39 +244,60 @@ h2 {
       height: 1px;
       position: absolute; }
   .ba-section4-news {
-    display: flex; }
+    display: flex;
+    padding-bottom: 200px; }
     .ba-section4-news-item {
       color: #000; }
       .ba-section4-news-item-bottom {
-        background-color: #ffff; }
+        background-color: #ffff;
+        height: 100%; }
         .ba-section4-news-item-bottom__title {
-          margin: 0; }
+          font-family: 'gothambold1';
+          padding: 20px 20px 0;
+          line-height: 30px;
+          font-size: 1.375em;
+          margin: 0;
+          text-transform: uppercase; }
+        .ba-section4-news-item-bottom p {
+          font-family: 'Open Sans', sans-serif;
+          padding: 0 20px; }
         .ba-section4-news-item-bottom-author {
           justify-content: flex-start;
           padding: 20px; }
+          .ba-section4-news-item-bottom-author__name {
+            text-transform: uppercase;
+            font-size: 1.125em; }
           .ba-section4-news-item-bottom-author a {
             color: #55b7ff;
             text-decoration: none; }
       .ba-section4-news-item > img {
         width: 100%; }
 
-.ba-section5-title {
-  display: flex;
-  justify-content: center;
-  position: relative; }
-  .ba-section5-title ::before {
-    content: '';
-    background-color: black;
-    top: 4%;
-    left: 46%;
-    right: 46%;
-    width: auto;
-    height: 1px;
-    position: absolute; }
+.ba-section5 {
+  padding-bottom: 140px; }
+  .ba-section5-title {
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    position: relative; }
+    .ba-section5-title ::before {
+      content: '';
+      background-color: black;
+      top: 4%;
+      left: 46%;
+      right: 46%;
+      width: auto;
+      height: 1px;
+      position: absolute; }
+  .ba-section5-gallery {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .ba-section5-btn-wrapper {
+    display: flex;
+    justify-content: center; }
 
-.ba-section5-btn-wrapper {
-  display: flex;
-  justify-content: center; }
+.ba-section6-map {
+  min-height: 700px; }
 
 .ba-footer {
   color: #ffff;
@@ -235,35 +309,53 @@ h2 {
     background-position: center;
     background-size: cover;
     height: 100%; }
-  .ba-footer .container2 {
+  .ba-footer .container-small {
     max-width: 770px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px; }
+    padding: 0 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -200px; }
+  .ba-footer-contact {
+    display: block;
+    color: black;
+    background-color: #ffffff;
+    opacity: 0.98;
+    top: -200px;
+    background-image: url(../img/frame-city-bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 50px; }
+    .ba-footer-contact__title {
+      position: relative;
+      text-align: center; }
+      .ba-footer-contact__title::before {
+        content: '';
+        background-color: black;
+        top: 4%;
+        left: 46%;
+        right: 46%;
+        width: auto;
+        height: 1px;
+        position: absolute; }
+    .ba-footer-contact-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .ba-footer-contact-left i {
+        color: #7e5aff;
+        margin-right: 10px; }
+    .ba-footer-contact-form input {
+      border: none;
+      border-bottom: solid 1px black; }
   .ba-footer-wr {
     display: flex;
-    justify-content: space-between; }
-
-.contact {
-  position: absolute;
-  color: black;
-  background-color: #ffffff;
-  opacity: 0.98;
-  top: -200px;
-  background-image: url(../img/frame-city-bg.png);
-  background-position: center;
-  background-size: cover; }
-  .contact-title {
-    position: relative; }
-    .contact-title::before {
-      content: '';
-      background-color: black;
-      top: 4%;
-      left: 46%;
-      right: 46%;
-      width: auto;
-      height: 1px;
-      position: absolute; }
+    justify-content: space-between;
+    margin-top: 30px; }
+  .ba-footer-copyrights {
+    margin-top: 30px; }
 
 .slick-dots {
   -webkit-transform: translate(-50%, 0) rotate(90deg);
