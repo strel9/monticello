@@ -101,6 +101,7 @@ h2 {
 
 	&__link {
 		font-family: 'GothamBook';
+		font-size: 0.875em;
 
 		display: flex;
 		align-items: center;
@@ -283,6 +284,10 @@ h2 {
 			text-transform: uppercase;
 		}
 
+		&__title {
+			margin-top: 0;
+		}
+
 		&__descr {
 			font-family: 'Open Sans', sans-serif;
 			font-size: 1.125em;
@@ -316,6 +321,10 @@ h2 {
 			margin: 0;
 			font-size: 1.375em;
 			text-transform: uppercase;
+		}
+
+		&__title {
+			margin-top: 0;
 		}
 
 		&__descr {

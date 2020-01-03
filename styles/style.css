@@ -62,6 +62,7 @@ h2 {
       padding-left: 4.125em; }
   .ba-menu__link {
     font-family: 'GothamBook';
+    font-size: 0.875em;
     display: flex;
     align-items: center;
     color: #ffff;
@@ -176,6 +177,8 @@ h2 {
       margin: 0;
       font-size: 1.375em;
       text-transform: uppercase; }
+    .ba-section2-right__title {
+      margin-top: 0; }
     .ba-section2-right__descr {
       font-family: 'Open Sans', sans-serif;
       font-size: 1.125em;
@@ -196,6 +199,9 @@ h2 {
   margin: 0;
   font-size: 1.375em;
   text-transform: uppercase; }
+
+.ba-section3-left__title {
+  margin-top: 0; }
 
 .ba-section3-left__descr {
   font-family: 'Open Sans', sans-serif;
