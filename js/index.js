@@ -20,7 +20,7 @@ $('.ba-slider2').slick(
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplaySpeed: 4000,
-        autoplay: false
+        autoplay: true
     }
 );
 
