@@ -161,38 +161,12 @@ h2 {
 
 	}
 
-
-
-	&-scroll {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 15%;
-
-
-		& a {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: #ffff;
-			text-decoration: none;
-			width: 41px;
-			height: 41px;
-			border-radius: 50%;
-			border: 1px solid #ffff;
-
-			&:hover {
-				color: #7e5aff;
-				background-color: #ffff;
-			}
-		}
-	}
-
 }
 
 .ba-section1 {
 	background: linear-gradient(to right, #55b7ff, #7e5aff);
+	position: relative;
 
-	// position: relative;
 	&-bg {
 		display: flex;
 		flex-direction: column;
@@ -233,6 +207,34 @@ h2 {
 
 				// font-weight: book;
 
+			}
+		}
+	}
+
+	&-scroll {
+		display: flex;
+		justify-content: center;
+		// margin-bottom: 15%;
+		// margin-top: 60%;
+		position: absolute;
+		bottom: 5%;
+		right: 0;
+		left: 0;
+
+		& a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #ffff;
+			text-decoration: none;
+			width: 41px;
+			height: 41px;
+			border-radius: 50%;
+			border: 1px solid #ffff;
+
+			&:hover {
+				color: #7e5aff;
+				background-color: #ffff;
 			}
 		}
 	}
@@ -576,11 +578,9 @@ h2 {
 		opacity: 0.98;
 		top: -200px;
 		background-image: url(../img/frame-city-bg.png);
-		background-position: center;
-		background-size: cover;
+		background-position: bottom;
+		background-repeat: no-repeat;
 		padding: 50px;
-		// height: 100%;
-
 
 		&__title {
 			position: relative;
@@ -679,7 +679,7 @@ h2 {
 
 // второй слайдер точки
 .ba-slider2 .slick-dots {
-	bottom: 20%;
+	bottom: 22%;
 }
 
 .ba-slider2 .slick-dots li button:before {
@@ -706,6 +706,7 @@ h2 {
 	border: 1px solid #ffff;
 	background-color: #ffff;
 }
+
 // 
 
 .slick-prev:before,
@@ -721,12 +722,14 @@ h2 {
 	border: 1px solid #ffff;
 }
 
-.slick-prev:before {
+.ba-slider2 .slick-prev:before {
+	transform: translate(-100%, -300%);
 	content: '\f104';
 
 }
 
-.slick-next:before {
+.ba-slider2 .slick-next:before {
+	transform: translate(100%, -300%);
 	content: '\f105';
 
 }
