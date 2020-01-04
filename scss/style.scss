@@ -465,11 +465,6 @@ h2 {
 					// 	text-decoration: none;
 					// 	color: #000;;
 					// }
-					& img {
-						// border-radius: 50%;
-						// display: flex;
-
-					}
 
 					&__name {
 						text-transform: uppercase;
@@ -524,6 +519,22 @@ h2 {
 	&-gallery {
 		padding-top: 30px;
 		padding-bottom: 30px;
+
+		&-left {
+			position: relative;
+
+			&__d360 {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+
+
+			}
+		}
+
 
 	}
 

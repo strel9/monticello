@@ -28,7 +28,7 @@ $('.ba-slider2').slick(
 var map;
 function initMap() {
     let nolan = { lat: 40.6863028, lng: -73.9072198 };
-    let myCenter = { lat: 40.6617973, lng: -73.9101575 }
+    let myCenter = { lat: 40.673443, lng: -73.896206 };
     map = new google.maps.Map(document.getElementById('map'), {
         center: myCenter,
         // height: 700,

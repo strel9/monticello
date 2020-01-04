@@ -386,6 +386,15 @@ h2 {
   .ba-section5-gallery {
     padding-top: 30px;
     padding-bottom: 30px; }
+    .ba-section5-gallery-left {
+      position: relative; }
+      .ba-section5-gallery-left__d360 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
   .ba-section5-btn-wrapper {
     display: flex;
     justify-content: center; }
