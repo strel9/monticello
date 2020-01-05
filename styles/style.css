@@ -154,12 +154,11 @@ h2 {
         background-color: #ffff; }
 
 .ba-section2 {
-  margin-bottom: 10%; }
+  padding-top: 7%; }
   .ba-section2-title {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 4%;
     margin-bottom: 4%; }
     .ba-section2-title ::before {
       content: '';
@@ -203,52 +202,47 @@ h2 {
       .ba-section2-right__city i {
         padding-right: 10px; }
 
-.ba-section3-block {
-  margin-bottom: 130px;
-  position: relative; }
-  .ba-section3-block .container {
-    display: flex; }
-
-.ba-section3-left__name {
-  margin: 0;
-  font-size: 1.375em;
-  text-transform: uppercase; }
-
-.ba-section3-left__title {
-  margin-top: 0; }
-
-.ba-section3-left__descr {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.125em;
-  max-width: 470px; }
-
-.ba-section3-left__city {
-  font-style: italic;
-  padding-top: 45px; }
-  .ba-section3-left__city i {
-    padding-right: 10px; }
-
-.ba-section3-right__svg {
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  top: -20%;
-  height: 100%;
-  width: 30%; }
-
-.ba-section3-right__img {
-  width: 100%; }
+.ba-section3 {
+  margin-bottom: 130px; }
+  .ba-section3-block {
+    position: relative; }
+    .ba-section3-block .container {
+      display: flex; }
+  .ba-section3-left__name {
+    margin: 0;
+    font-size: 1.375em;
+    text-transform: uppercase; }
+  .ba-section3-left__title {
+    margin-top: 0; }
+  .ba-section3-left__descr {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    max-width: 470px; }
+  .ba-section3-left__city {
+    font-style: italic;
+    padding-top: 45px; }
+    .ba-section3-left__city i {
+      padding-right: 10px; }
+  .ba-section3-right__svg {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: -20%;
+    height: 100%;
+    width: 30%; }
+  .ba-section3-right__img {
+    width: 100%; }
 
 .ba-section4 {
   color: #ffff;
-  background: linear-gradient(to right, #3a85d7, #24ccfa); }
+  background: linear-gradient(to right, #3a85d7, #24ccfa);
+  padding-top: 4%; }
   .ba-section4-wrapper {
     background-image: url(../img/4city.png);
     background-position: center;
     background-size: cover;
     height: 100%; }
   .ba-section4-title {
-    margin-top: 140px;
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
@@ -295,9 +289,9 @@ h2 {
         width: 100%; }
 
 .ba-section5 {
+  margin-top: 130px;
   padding-bottom: 140px; }
   .ba-section5-title {
-    margin-top: 130px;
     display: flex;
     justify-content: center;
     position: relative; }
@@ -349,11 +343,13 @@ h2 {
     right: 0;
     top: -200px; }
   .ba-footer-contact {
+    position: absolute;
+    height: 452px;
     display: block;
     color: black;
     background-color: #ffffff;
     opacity: 0.98;
-    top: -200px;
+    top: -150px;
     background-image: url(../img/frame-city-bg.png);
     background-position: bottom;
     background-repeat: no-repeat;
