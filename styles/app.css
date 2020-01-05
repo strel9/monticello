@@ -114,24 +114,24 @@ h2 {
   font-size: 1.14em;
   text-transform: uppercase;
   text-decoration: none; }
-  .ba-menu__item {
+  .ba-menu-item {
     display: flex;
     align-items: center; }
-    .ba-menu__item:before {
+    .ba-menu-item:before {
       content: "";
       width: 7px;
       height: 7px;
       border-radius: 50%;
       border: 1px solid #ffff;
       margin-right: 10px; }
-    .ba-menu__item:hover::before {
+    .ba-menu-item:hover::before {
       content: "";
       width: 7px;
       height: 7px;
       border-radius: 50%;
       border: 1px solid #ffff;
       background-color: #ffff; }
-    .ba-menu__item:not(:first-child) {
+    .ba-menu-item:not(:first-child) {
       padding-left: 4.125em; }
   .ba-menu__link {
     font-family: 'GothamBook';

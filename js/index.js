@@ -211,21 +211,45 @@ function initMap() {
     });
 }
 
-// gmap json
+// скролл плавный 
+$(document).ready(function () {
+    $('a[href^="#"]').bind('click.smoothscroll', function (e) {
+        e.preventDefault();
 
+        var target = this.hash,
+            $target = $(target);
 
-// скролл плавный настроить
-// $(document).ready(function () {
-//     $("#menu").on("click", "a", function (event) {
-//         event.preventDefault();
-//         var id = $(this).attr('href'),
-//             top = $(id).offset().top;
-//         $('body,html').animate({ scrollTop: top }, 1500);
-//     });
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 2000, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+
+});
+// скролл плавный 
+// let lnk = $('.ba-menu__link');
+// $('.ba-menu li').on("click", 'a', function (event) {
+//     event.preventDefault();
+//     console.log(this);
+//     let id = $(this).attr('href');
+//     console.log(id);
+//     let top = $(id).offset().top;
+//     let adv_top = document.querySelector('.ba-header-top').clientHeight;
+//     console.log(top, adv_top);
+//     $('html, body').animate({ scrollTop: (top - adv_top) }, 2000);
 // });
-// 
+// скролл плавный 
+// var $page = $('html, body');
+// $('a[href*="#contact"]').click(function () {
+//     $page.animate({
+//         scrollTop: $($.attr(this, 'href')).offset().top
+//     }, 2000);
+//     return false;
+// });
+// ------
 // $(document).ready(function() {
-//     $('a[href^="#"]').click(function () { 
+//     $('.scroll-to').click(function () { 
 //       elementClick = $(this).attr("href");
 //       destination = $(elementClick).offset().top;
 //       if($.browser.safari){
@@ -236,29 +260,24 @@ function initMap() {
 //       return false;
 //     });
 //   });
-
-// скролл плавный настроить
-// var $page = $('html, body');
-// $('a[href*="#contact"]').click(function () {
-//     $page.animate({
-//         scrollTop: $($.attr(this, 'href')).offset().top
-//     }, 400);
-//     return false;
-// });
-
-// 
 // $(document).ready(function () {
-//     $('a[href^="#"]').bind('click.smoothscroll', function (e) {
+//     $("a.scroll-to").on("click", function (e) {
 //         e.preventDefault();
-
-//         var target = this.hash,
-//             $target = $(target);
-
+//         var anchor = $(this).attr('href');
 //         $('html, body').stop().animate({
-//             'scrollTop': $target.offset().top
-//         }, 600, 'swing', function () {
-//             window.location.hash = target;
-//         });
+//             scrollTop: $(anchor).offset().top - 60
+//         }, 800);
 //     });
-
 // });
+// скролл плавный настроить
+// $(document).ready(function () {
+//     $("#menu").on("click", "a", function (event) {
+//         event.preventDefault();
+//         var id = $(this).attr('href'),
+//             top = $(id).offset().top;
+//         $('body,html').animate({ scrollTop: top }, 1500);
+//     });
+// });
+// 
+
+
