@@ -414,15 +414,12 @@ h2 {
     position: absolute;
     left: 0;
     right: 0;
-    top: -200px; }
+    top: -350px; }
   .ba-footer-contact {
-    position: absolute;
-    height: 452px;
+    min-height: 452px;
     display: block;
     color: black;
     background-color: #ffffff;
-    opacity: 0.98;
-    top: -150px;
     background-image: url(../img/frame-city-bg.png);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -433,7 +430,7 @@ h2 {
       .ba-footer-contact__title::before {
         content: '';
         background-color: black;
-        top: 4%;
+        top: -28%;
         left: 46%;
         right: 46%;
         width: auto;
